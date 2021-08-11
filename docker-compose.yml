@@ -12,6 +12,8 @@ services:
   login:
     image: 808790164949.dkr.ecr.us-east-1.amazonaws.com/login:0.0.8
     container_name: login
+    ports:
+      - "8080:8080"
     depends_on:
       - users
 
