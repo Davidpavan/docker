@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   frontend:
-    image: 808790164949.dkr.ecr.us-east-1.amazonaws.com/frontend:0.0.13
+    image: 808790164949.dkr.ecr.us-east-1.amazonaws.com/frontend:0.0.14
     container_name: frontend
     ports:
       - "8080:8080"
@@ -10,7 +10,7 @@ services:
       - users
       - todo
   login:
-    image: 808790164949.dkr.ecr.us-east-1.amazonaws.com/login:0.0.8
+    image: 808790164949.dkr.ecr.us-east-1.amazonaws.com/login:0.0.9
     container_name: login
     depends_on:
       - users
