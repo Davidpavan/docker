@@ -21,6 +21,7 @@ services:
 
   todo:
     image: 808790164949.dkr.ecr.us-east-1.amazonaws.com/todo:0.0.14
+    restart: on-failure
     container_name: todo
     depends_on:
       - redis
