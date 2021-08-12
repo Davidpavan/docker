@@ -10,7 +10,7 @@ services:
       - users
       - todo
   login:
-    image: 808790164949.dkr.ecr.us-east-1.amazonaws.com/login:0.0.10
+    image: 808790164949.dkr.ecr.us-east-1.amazonaws.com/login:0.0.11
     container_name: login
     depends_on:
       - users
